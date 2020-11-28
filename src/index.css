@@ -21,7 +21,6 @@ body {
   flex-direction: column;
 }
 
-
 .app.warm {
   background: url('./assets/warm.jpg');
   background-size: cover; 
@@ -54,7 +53,6 @@ main {
 
 .search-box .search-bar {
   display: block;
-
   color: #313131;
   font-size: 20px;
   transition: 0.4s ease-in-out;
@@ -211,11 +209,13 @@ hr {
   justify-content: center;
   align-items: center;
   flex-direction: row;
+  height: 60px;
+  transform: scale(.8);
 }
 
 .forekastr h1 {
   position: relative;
-  top: 150%;  
+  top: 350%;  
 }
 
 .forekastr h1:nth-child(1) { 
@@ -256,7 +256,7 @@ hr {
 
 @keyframes forekastr {
   to {
-    top: 0%;
+    top: 200%;
   }
 }
 
@@ -272,4 +272,8 @@ hr {
   width: 60%;
   opacity: .5;
   filter: drop-shadow(20px 50px 15px #00000044);
+}
+
+main {
+  transform: scale(.8);
 }
